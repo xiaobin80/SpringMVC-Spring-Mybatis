@@ -4,7 +4,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+// slf4j
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.dao.DataAccessException;
 //import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
@@ -17,7 +20,7 @@ public class SqlSessionTrainOrderDao extends SqlSessionDaoSupport implements
 	
 	public SqlSessionTrainOrderDao() {
 		// TODO Auto-generated constructor stub
-		logger = Logger.getLogger(this.getClass());
+		logger = LoggerFactory.getLogger(this.getClass());
 	}
 	
 	public TrainOrder getCar(int trainNumber, int seriaryNumber)
