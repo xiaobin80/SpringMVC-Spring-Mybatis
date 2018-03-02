@@ -7,7 +7,7 @@ https://github.com/xiaobin80/carnumberJSP
 
 
 	/**
-	 * Built with MyEclipse 2017 Stable 1.0
+	 * Built with MyEclipse 2017 Stable 2.0
 	 *
 	 */
 	 

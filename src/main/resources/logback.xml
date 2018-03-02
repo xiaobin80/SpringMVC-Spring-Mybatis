@@ -8,21 +8,27 @@
 	    </encoder> 
     </appender>
   
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">   
-	   <file>../logs/carnumJSP.log</file>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- tomcat -->
+	    <file>../logs/carnumJSP.log</file>
 	   
-	   <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-	       	<fileNamePattern>carnumJSP.%i.log</fileNamePattern>
-	    	<minIndex>1</minIndex>
+        <!-- jetty 
+	    <file>logs/carnumJSP.log</file>
+	    -->
+	   
+	    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+	        <fileNamePattern>carnumJSP.%i.log</fileNamePattern>
+	        <minIndex>1</minIndex>
 	    	<maxIndex>3</maxIndex>
 		</rollingPolicy>
 	
 		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-	       <maxFileSize>512KB</maxFileSize>
-	   </triggeringPolicy>
-	   <encoder>   
-	     <pattern>%d %p [%c] - %m%n</pattern>   
-	   </encoder>   
+	        <maxFileSize>512KB</maxFileSize>
+	    </triggeringPolicy>
+
+	    <encoder>   
+	        <pattern>%d %p [%c] - %m%n</pattern>   
+	    </encoder>   
     </appender>
 
     <root level="INFO">  
