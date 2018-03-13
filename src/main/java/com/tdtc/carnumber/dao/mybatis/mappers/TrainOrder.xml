@@ -3,7 +3,7 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="com.tdtc.jpetstore.dao.TrainOrderDao">
+<mapper namespace="com.tdtc.carnumber.dao.TrainOrderDao">
 
 	<resultMap id="result"
 		type="TrainOrder">
