@@ -7,7 +7,7 @@ import java.util.Map;
 // slf4j
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.dao.DataAccessException;
 //import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
@@ -21,6 +21,12 @@ public class SqlSessionTrainOrderDao extends SqlSessionDaoSupport implements
 	public SqlSessionTrainOrderDao() {
 		// TODO Auto-generated constructor stub
 		logger = LoggerFactory.getLogger(this.getClass());
+	}
+	
+	@Override
+	public void setSqlSessionTemplate(SqlSessionTemplate sqlSessionTemplate) {
+		// TODO Auto-generated method stub
+		super.setSqlSessionTemplate(sqlSessionTemplate);
 	}
 	
 	public TrainOrder getCar(int trainNumber, int seriaryNumber)
