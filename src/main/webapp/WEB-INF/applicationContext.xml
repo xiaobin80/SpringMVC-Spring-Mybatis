@@ -9,10 +9,14 @@
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xmlns:aop="http://www.springframework.org/schema/aop"
 		xmlns:tx="http://www.springframework.org/schema/tx"
+		xmlns:mvc="http://www.springframework.org/schema/mvc"
+		xmlns:context="http://www.springframework.org/schema/context"
 		xsi:schemaLocation="
 			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
 			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
-			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+			http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd" >
 
 
 	<!-- ========================= GENERAL DEFINITIONS ========================= -->
@@ -32,6 +36,10 @@
 
 	<bean id="carnumber" class="com.tdtc.carnumber.service.CarnumberImpl">
 		<property name="trainOrderDao" ref="trainOrderDao"/>
+	</bean>
+	
+	<bean id="customer" class="com.tdtc.carnumber.service.CustomerServiceImpl">
+		<property name="customerDao" ref="customerDao"/>
 	</bean>
 
 	<!-- ========================= ASPECT CONFIGURATION ======================== -->
@@ -59,5 +67,10 @@
 			<tx:method name="*" read-only="true"/>
 		</tx:attributes>
 	</tx:advice>
+	
+	<!-- Add Tag: mvc & context -->
+	<mvc:default-servlet-handler />
+    <mvc:annotation-driven />
+    <context:component-scan base-package="com.tdtc.carnumber"></context:component-scan>
 
 </beans>

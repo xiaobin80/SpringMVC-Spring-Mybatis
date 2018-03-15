@@ -28,21 +28,6 @@ public class SqlSessionTrainOrderDao extends SqlSessionDaoSupport implements
 		// TODO Auto-generated method stub
 		super.setSqlSessionTemplate(sqlSessionTemplate);
 	}
-	
-	public TrainOrder getCar(int trainNumber, int seriaryNumber)
-			throws DataAccessException {
-		Map<String, Integer> trainOrderMap = new HashMap<String, Integer>();
-		trainOrderMap.put("trainNumber", trainNumber);
-		trainOrderMap.put("seriaryNumber", seriaryNumber);
-		// TODO Auto-generated method stub
-		return (TrainOrder) getSqlSession().selectList("getCar", trainOrderMap);
-
-	}
-
-	public TrainOrder getCar(int sn) throws DataAccessException {
-		// TODO Auto-generated method stub
-		return (TrainOrder) getSqlSession().selectList("getCar", sn);
-	}
 
 	public List getCarnumberList(String year, String month, int trainNumber)
 			throws DataAccessException {

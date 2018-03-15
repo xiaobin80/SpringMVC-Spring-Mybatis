@@ -69,16 +69,6 @@ public class CarnumberImpl implements CarnumberFacade {
 		return this.trainOrderDao.getCarnumberList(year, month, trainNumber);
 	}
 	
-	public TrainOrder getCarnumber(int sn) {
-		// TODO Auto-generated method stub
-		return this.trainOrderDao.getCar(sn);
-	}
-	
-	public TrainOrder getCarnumber(int trainNumber, int seriaryNumber) {
-		// TODO Auto-generated method stub
-		return this.trainOrderDao.getCar(trainNumber, seriaryNumber);
-	}
-	
 	public List getYearList() {
 		// TODO Auto-generated method stub
 		return this.trainOrderDao.getYearList();

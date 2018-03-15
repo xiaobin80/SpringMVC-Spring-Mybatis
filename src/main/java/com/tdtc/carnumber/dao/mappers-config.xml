@@ -7,6 +7,7 @@
 
 	<typeAliases>
 		<typeAlias alias="TrainOrder" type="com.tdtc.carnumber.pojo.po.TrainOrder"/>
+		<typeAlias alias="Customer" type="com.tdtc.carnumber.pojo.Customer"/>
 	</typeAliases>
 
 </configuration>

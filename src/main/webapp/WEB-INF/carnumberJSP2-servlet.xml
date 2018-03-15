@@ -23,5 +23,9 @@
     <bean name="/view/trainOrder.do" class="com.tdtc.carnumber.web.ViewTrainOrderController">
 		<property name="carnumber" ref="carnumber"/>
 	</bean>
+	
+	<bean name="/cust/insert.do" class="com.tdtc.carnumber.web.CustomerController">
+		<property name="customer" ref="customer"/>
+	</bean>
 
 </beans>

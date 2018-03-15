@@ -42,5 +42,9 @@ Step 1: war
     
 
 Step 2:       
-     http://localhost:8080/carnumberJSP2/view/trainOrder.do    
+     http://localhost:8080/carnumberJSP2/view/trainOrder.do  
+     http://localhost:8080/carnumberJSP2/cust/list
+     http://localhost:8080/carnumberJSP2/cust/insert   
+     http://localhost:8080/carnumberJSP2/cust/update/{id}    
+     http://localhost:8080/carnumberJSP2/cust/del/{id}     
      

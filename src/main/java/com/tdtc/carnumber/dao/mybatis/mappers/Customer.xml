@@ -1,0 +1,38 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.tdtc.carnumber.dao.CustomerDao">
+
+	<resultMap id="result"
+		type="Customer">
+		<result property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="email" column="email"/>
+		<result property="age" column="age"/>
+		<result property="gender" column="gender"/>
+		<result property="birthday" column="birthday"/>
+	</resultMap>
+	
+	<insert id="insertCustomer">
+	  insert into customer (name, email, age, gender, birthday) values (#{name},#{email}, #{age}, #{gender}, #{birthday})
+	</insert>
+	
+	<select id="getCustomerList" resultMap="result">
+	  select id, name, email, age, gender, birthday from customer
+	</select>
+	
+	<select id="getCustomerById" resultMap="result">
+	  select name, email, age, gender, birthday from customer where id = #{id}
+	</select>
+	
+	<update id="updateCustomer">
+	  update customer set name = #{name}, email = #{email}, age = #{age}, gender = #{gender}, birthday = #{birthday} where id = #{id}
+	</update>
+
+	<delete id="delCustomerById">
+	  delete from customer where id = #{id}
+	</delete>
+
+</mapper>

@@ -2,14 +2,6 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>car number JSP</display-name>
   <description>Spring 4.0</description>
-	<!--
-		- Location of the Log4J config file, for initialization and refresh checks.
-		- Applied by Log4jConfigListener.
-	-->
-	<context-param>
-		<param-name>log4jConfigLocation</param-name>
-		<param-value>/WEB-INF/log4j.properties</param-value>
-	</context-param>
 	
 	<!--
 		- Location of the XML file that defines the root application context.
@@ -53,8 +45,9 @@
 		<servlet-name>carnumberJSP2</servlet-name>
 		<!--
 		<servlet-name>action</servlet-name>
-		-->
 		<url-pattern>*.do</url-pattern>
+		-->
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>	
 
   <welcome-file-list>
