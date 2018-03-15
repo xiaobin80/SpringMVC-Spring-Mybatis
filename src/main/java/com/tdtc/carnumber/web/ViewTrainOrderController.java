@@ -18,7 +18,6 @@ public class ViewTrainOrderController implements Controller {
 	private CarnumberFacade carnumber;
 	private boolean tagPage;
 	private String myMonth, myYear;
-	private int myTrainNumber;
 	private List myTrainNumberList;
 	
 	public ViewTrainOrderController() {

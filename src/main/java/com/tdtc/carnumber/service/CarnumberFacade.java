@@ -16,7 +16,4 @@ public interface CarnumberFacade {
 	List getYearList();
 	List getMonthList();
 	List getTrainNumberList(String year, String month);
-	TrainOrder getCarnumber(int trainNumber, int seriaryNumber);
-	TrainOrder getCarnumber(int sn);
-
 }
