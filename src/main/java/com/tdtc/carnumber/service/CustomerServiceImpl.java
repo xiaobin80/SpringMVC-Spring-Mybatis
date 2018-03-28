@@ -23,7 +23,7 @@ public class CustomerServiceImpl implements CustomerService {
 	}
 	
 	@Override
-	public List getCustomerList() {
+	public List<Customer> getCustomerList() {
 		// TODO Auto-generated method stub
 		return this.customerDao.getCustomerList();
 	}

@@ -12,8 +12,8 @@ import com.tdtc.carnumber.pojo.po.TrainOrder;
  */
 public interface CarnumberFacade {
 	
-	List getCarnumberList(String year, String month, int trainNumber);
-	List getYearList();
-	List getMonthList();
-	List getTrainNumberList(String year, String month);
+	List<TrainOrder> getCarnumberList(String year, String month, int trainNumber);
+	List<String> getYearList();
+	List<String> getMonthList();
+	List<String> getTrainNumberList(String year, String month);
 }

@@ -18,7 +18,7 @@ public class ViewTrainOrderController implements Controller {
 	private CarnumberFacade carnumber;
 	private boolean tagPage;
 	private String myMonth, myYear;
-	private List myTrainNumberList;
+	private List<String> myTrainNumberList;
 	
 	public ViewTrainOrderController() {
 		// TODO Auto-generated constructor stub
@@ -40,7 +40,7 @@ public class ViewTrainOrderController implements Controller {
 		
 		String strTn = request.getParameter("trainNumber");
 		
-		Map myModel = new HashMap<String, String>();
+		Map<String, List> myModel = new HashMap<String, List>();
 		
 		
 		if (tagPage) {
@@ -62,10 +62,10 @@ public class ViewTrainOrderController implements Controller {
 			logger.info("carnumber.jsp");
 			
 			
-			List yearList = new ArrayList<String>();
+			List<String> yearList = new ArrayList<String>();
 			yearList = carnumber.getYearList();
 			
-			List monthList = new ArrayList<String>();
+			List<String> monthList = new ArrayList<String>();
 			monthList = carnumber.getMonthList();
 			
 			myModel.put("yearList", yearList);

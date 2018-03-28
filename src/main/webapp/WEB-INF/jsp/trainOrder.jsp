@@ -1,4 +1,4 @@
-﻿<%@ include file="IncludeTop.jsp" %>
+<%@ include file="IncludeTop.jsp" %>
 
 
 <form method=POST action="http://localhost:8080/carnumberJSP2/view/trainOrder.do">
@@ -16,17 +16,21 @@
 </form>
 	<tr>
 	<tr>
-<center>	
-	<table border>
-
-		
+<div style="text-align:center;">	
+	<table border="1" style="margin: auto;">
 		<tr>
-		<th>序号</th>
-		<th>车号</th>
-		<th>车型</th>
-		<th>标重</th>
-		<th>自重</th>
-		<th>到达时间</th>
+		<!-- 序号 -->
+		<th>Sn</th>
+		<!-- 车号 -->
+		<th>Car Number</th>
+		<!-- 车型 -->
+		<th>Car Marque</th>
+		<!-- 标重  -->
+		<th>Carry Weight</th>
+		<!-- 自重 -->
+		<th>Self Weight</th>
+		<!-- 到达时间 -->
+		<th>Past Time</th>
 
 		</tr>
 
@@ -53,7 +57,7 @@
 			</tr>
 		</c:forEach>
 	</table>
-</center>
+</div>
 
 
 

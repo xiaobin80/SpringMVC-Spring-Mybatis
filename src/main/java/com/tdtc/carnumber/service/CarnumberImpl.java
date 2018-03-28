@@ -3,7 +3,6 @@ package com.tdtc.carnumber.service;
 import java.util.List;
 
 import com.tdtc.carnumber.dao.TrainOrderDao;
-
 import com.tdtc.carnumber.pojo.po.TrainOrder;
 
 /**
@@ -64,22 +63,22 @@ public class CarnumberImpl implements CarnumberFacade {
 	//-------------------------------------------------------------------------
 	// Operation methods, implementing the PetStoreFacade interface
 	//-------------------------------------------------------------------------
-	public List getCarnumberList(String year, String month, int trainNumber) {
+	public List<TrainOrder> getCarnumberList(String year, String month, int trainNumber) {
 		// TODO Auto-generated method stub
 		return this.trainOrderDao.getCarnumberList(year, month, trainNumber);
 	}
 	
-	public List getYearList() {
+	public List<String> getYearList() {
 		// TODO Auto-generated method stub
 		return this.trainOrderDao.getYearList();
 	}
 	
-	public List getMonthList() {
+	public List<String> getMonthList() {
 		// TODO Auto-generated method stub
 		return this.trainOrderDao.getMonthList();
 	}
 	
-	public List getTrainNumberList(String year, String month) {
+	public List<String> getTrainNumberList(String year, String month) {
 		// TODO Auto-generated method stub
 		return this.trainOrderDao.getTrainNumberList(year, month);
 	}

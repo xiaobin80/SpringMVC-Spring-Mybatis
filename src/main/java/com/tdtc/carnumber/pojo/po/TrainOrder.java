@@ -3,6 +3,8 @@ package com.tdtc.carnumber.pojo.po;
 import java.io.Serializable;
 
 public class TrainOrder implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
 	private int trainNumber;
 	private int seriaryNumber;
 	private String carNumber;

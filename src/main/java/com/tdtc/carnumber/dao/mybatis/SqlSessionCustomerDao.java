@@ -24,7 +24,7 @@ public class SqlSessionCustomerDao extends SqlSessionDaoSupport implements Custo
 	}
 	
 	@Override
-	public List getCustomerList() throws DataAccessException {
+	public List<Customer> getCustomerList() throws DataAccessException {
 		// TODO Auto-generated method stub
 		return getSqlSession().selectList("getCustomerList");
 	}
