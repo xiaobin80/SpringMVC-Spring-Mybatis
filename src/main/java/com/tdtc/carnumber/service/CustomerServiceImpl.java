@@ -3,10 +3,12 @@ package com.tdtc.carnumber.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.tdtc.carnumber.dao.CustomerDao;
 import com.tdtc.carnumber.pojo.Customer;
 
+@Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
 
 	@Autowired
