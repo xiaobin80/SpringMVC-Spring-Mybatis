@@ -17,7 +17,7 @@
 					username-parameter="ssoId" 
 					password-parameter="password" />
 		<logout logout-success-url="/" />
-		<csrf/>
+		<csrf disabled="true"/>
 	</http>
 	
 	<authentication-manager id="inMemoryAuthMgr">
