@@ -46,5 +46,8 @@
 	<bean id="customerDao" class="com.tdtc.carnumber.dao.mybatis.SqlSessionCustomerDao">
 		<property name="sqlSessionTemplate" ref="sqlSession"/>
 	</bean>
-
+	
+	<bean id="loginDao" class="com.tdtc.carnumber.dao.mybatis.SqlSessionLoginDao">
+		<property name="sqlSessionTemplate" ref="sqlSession"/>
+	</bean>
 </beans>

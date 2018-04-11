@@ -71,6 +71,7 @@
 	<!-- Add Tag: mvc & context -->
 	<mvc:default-servlet-handler />
     <mvc:annotation-driven />
+    <mvc:resources mapping="/static/css/**" location="/static/css/"/>
     <context:component-scan base-package="com.tdtc.carnumber"></context:component-scan>
 
 </beans>

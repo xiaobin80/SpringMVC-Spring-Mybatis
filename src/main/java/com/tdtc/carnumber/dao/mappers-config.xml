@@ -8,6 +8,7 @@
 	<typeAliases>
 		<typeAlias alias="TrainOrder" type="com.tdtc.carnumber.pojo.po.TrainOrder"/>
 		<typeAlias alias="Customer" type="com.tdtc.carnumber.pojo.Customer"/>
+		<typeAlias alias="User" type="com.tdtc.carnumber.pojo.User"/>
 	</typeAliases>
 
 </configuration>
