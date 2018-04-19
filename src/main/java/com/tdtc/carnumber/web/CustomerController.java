@@ -45,7 +45,8 @@ public class CustomerController {
 		for (Customer customer : custList) {
 			logger.info(customer.getEmail() + " " + customer.getName());
 		}
-		return "custList";
+		//return "custList";
+		return "custList.html";
 	}	
 	
 	@RequestMapping(value = "/insert", method = RequestMethod.GET)

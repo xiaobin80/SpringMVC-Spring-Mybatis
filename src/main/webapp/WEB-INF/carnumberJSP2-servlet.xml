@@ -12,9 +12,35 @@
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
 		<property name="prefix" value="/WEB-INF/jsp/"/>
-		<property name="suffix" value=".jsp"/>
+		<property name="viewNames" value="*.jsp" />
 	</bean>
 
+    <!-- **************************************************************** -->
+    <!-- https://www.thymeleaf.org/doc/tutorials/2.1/thymeleafspring.html -->
+    <!--  THYMELEAF-SPECIFIC ARTIFACTS                                    -->
+    <!--  TemplateResolver <- TemplateEngine <- ViewResolver              -->
+    <!-- **************************************************************** -->
+	<!-- https://qiita.com/zateon/items/a4c4db2471cc7204dbee -->
+	<!-- https://stackoverflow.com/questions/28480223/using-both-thymeleaf-and-jsp -->
+	<bean id="templateResolver"
+	      class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
+	    <property name="prefix" value="/WEB-INF/html/" />
+	    <property name="templateMode" value="HTML5" />
+	</bean>
+	    
+	<bean id="templateEngine"
+	        class="org.thymeleaf.spring4.SpringTemplateEngine">
+	    <property name="templateResolver" ref="templateResolver" />
+	</bean>
+	   
+	<bean class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+	    <property name="templateEngine" ref="templateEngine" />
+	    <property name="viewNames" value="*.html" />
+	</bean>
+
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	    <property name="viewNames" value="redirect*" />
+	</bean>
 
 	<!-- ========================= DEFINITIONS OF PUBLIC CONTROLLERS ========================= -->
 
