@@ -53,7 +53,7 @@ public class CustomerController {
 	public String saveCustomerPage(Model model) {
 		logger.info("Returning custSave.jsp page");
 		model.addAttribute("customer", new Customer());
-		return "custSave";
+		return "custSave.jsp";
 	}
 	
 	@RequestMapping(value = "/insert.do", method = RequestMethod.POST)
@@ -63,7 +63,7 @@ public class CustomerController {
 
 		if (result.hasErrors()) {
 			logger.info("Returning custSave.jsp page");
-			return "custSave";
+			return "custSave.jsp";
 		}
 		
 		this.customer.insertCustomer(customer);
@@ -72,7 +72,7 @@ public class CustomerController {
 		status.setComplete();
 
 		//return form success view
-		return "custSaveSuccess";
+		return "custSaveSuccess.jsp";
 	}
 	
 	@RequestMapping(value = "update/{id}", method = RequestMethod.GET)
@@ -85,7 +85,7 @@ public class CustomerController {
 		model.addAttribute("customer", cust);
 		
 		logger.info("Returning custUpdate.jsp page");
-		return "custUpdate";
+		return "custUpdate.jsp";
 	}		
 	
 	@RequestMapping(value = "update/{id}", method = RequestMethod.POST)
@@ -104,7 +104,7 @@ public class CustomerController {
 
 		this.customer.updateCustomer(customer);
 		
-		return "custSaveSuccess";
+		return "custSaveSuccess.jsp";
 	}
 	
 	

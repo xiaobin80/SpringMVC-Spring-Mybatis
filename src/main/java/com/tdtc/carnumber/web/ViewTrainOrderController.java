@@ -52,7 +52,7 @@ public class ViewTrainOrderController implements Controller {
 				myModel.put("carList", 
 						carnumber.getCarnumberList(myYear, myMonth, trainNumber));
 				myModel.put("trainNumberList", myTrainNumberList);
-				return new ModelAndView("trainOrder","myModel2", myModel);
+				return new ModelAndView("trainOrder.jsp","myModel2", myModel);
 			}
 			
 
@@ -71,7 +71,7 @@ public class ViewTrainOrderController implements Controller {
 			myModel.put("yearList", yearList);
 			myModel.put("monthList", monthList);
 				
-			return new ModelAndView("carnumber","myModel2", myModel);
+			return new ModelAndView("carnumber.jsp","myModel2", myModel);
 		} else {
 			logger.info("trainOrder.jsp");
 			myYear = strYear;
@@ -82,7 +82,7 @@ public class ViewTrainOrderController implements Controller {
 			myModel.put("trainNumberList", myTrainNumberList);
 			tagPage = true;
 
-			return new ModelAndView("trainOrder","myModel2", myModel);
+			return new ModelAndView("trainOrder.jsp","myModel2", myModel);
 		}
 		
 	}
