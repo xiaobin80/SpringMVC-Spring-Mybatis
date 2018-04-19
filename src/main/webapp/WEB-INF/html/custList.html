@@ -6,12 +6,15 @@
 
 </head>
 <body>
+	<label>Thyme Leaf Result</label>
 	<table border="1">	
 		<tr>
-		<th>User ID</th>
+		<th>ID</th>
 		<th>Name</th>
 		<th>Email</th>
 		<th>Age</th>
+		<th>Gender</th>
+		<th>birthday</th>
 		</tr>
 
 		<tr th:each="customer : ${customers}">
@@ -19,6 +22,8 @@
 			<td th:text="${customer.name}">Name</td>
 			<td th:text="${customer.email}">email</td>
 			<td th:text="${customer.age}">age</td>
+			<td th:text="${customer.gender}">Gender</td>
+			<td th:text="${customer.birthday}">birthday</td>
 		</tr>
 	</table>
 

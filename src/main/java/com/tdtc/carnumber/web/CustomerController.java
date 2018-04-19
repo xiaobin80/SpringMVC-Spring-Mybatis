@@ -45,7 +45,7 @@ public class CustomerController {
 		for (Customer customer : custList) {
 			logger.info(customer.getEmail() + " " + customer.getName());
 		}
-		//return "custList";
+		//return "custList.jsp";
 		return "custList.html";
 	}	
 	
