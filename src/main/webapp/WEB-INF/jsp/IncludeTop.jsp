@@ -5,11 +5,6 @@
 <head>
 <title>Car number List View</title>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<META HTTP-EQUIV="Cache-Control" CONTENT="max-age=0">
-<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
-<meta http-equiv="expires" content="0">
-<META HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT">
-<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
 </head>
 
 <body>
