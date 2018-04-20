@@ -37,7 +37,7 @@ public class LoginController {
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String loginPage() {
 		if (isCurrentAuthenticationAnonymous()) {
-			return "login";
+			return "login.jsp";
 	    } else {
 	    	return "redirect:/";  
 	    }
