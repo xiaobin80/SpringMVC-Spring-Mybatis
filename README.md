@@ -1,4 +1,4 @@
-Car Number JSP2
+SpringMVC Spring Mybatis
 ===============
 
 Projects based on carnumberJSP.
