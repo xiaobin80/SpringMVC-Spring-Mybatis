@@ -9,8 +9,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<webVersion>2.5</webVersion>
-  	<spring.version>4.3.16.RELEASE</spring.version>
-  	<springsecurity.version>4.2.5.RELEASE</springsecurity.version>
+  	<spring.version>4.3.17.RELEASE</spring.version>
+  	<springsecurity.version>4.2.6.RELEASE</springsecurity.version>
   	<thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
   </properties>
   <dependencies>
@@ -37,7 +37,7 @@
   	<dependency>
   		<groupId>org.aspectj</groupId>
   		<artifactId>aspectjweaver</artifactId>
-  		<version>1.8.13</version>
+  		<version>1.9.1</version>
   	</dependency>
   	<dependency>
   		<groupId>org.mybatis</groupId>
