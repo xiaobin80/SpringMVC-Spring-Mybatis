@@ -1,11 +1,8 @@
 SpringMVC Spring Mybatis
 ===============
 
-Projects based on carnumberJSP.
+Data for "train Order" See [data](https://github.com/xiaobin80/hlr_servlet/tree/v1.3/data).    
     
-https://github.com/xiaobin80/carnumberJSP
-
-
 	/**
 	 * Built with MyEclipse 2017 Stable 2.0
 	 *
