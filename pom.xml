@@ -130,5 +130,5 @@
         
     </build>
 
-    <description>Projects based on carnumberJSP.</description>
+    <description>JSP/Thymeleaf + SpringMVC+Spring(Spring Security) + MyBatis</description>
 </project>
