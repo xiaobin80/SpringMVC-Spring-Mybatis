@@ -9,8 +9,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<webVersion>2.5</webVersion>
-  	<spring.version>4.3.17.RELEASE</spring.version>
-  	<springsecurity.version>4.2.6.RELEASE</springsecurity.version>
+  	<spring.version>4.3.18.RELEASE</spring.version>
+  	<springsecurity.version>4.2.7.RELEASE</springsecurity.version>
   	<thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
   </properties>
   <dependencies>
@@ -24,6 +24,15 @@
   		<artifactId>commons-dbcp2</artifactId>
   		<version>2.2.0</version>
   	</dependency>
+	<!-- 
+  	    mvn install:install-file -Dfile=D:/war/lib/ojdbc6.jar 
+  	    -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0 -Dpackaging=jar 
+  	-->
+    <dependency>
+        <groupId>com.oracle</groupId>
+        <artifactId>ojdbc6</artifactId>
+        <version>11.2.0</version>
+    </dependency>
   	<dependency>
   		<groupId>mysql</groupId>
   		<artifactId>mysql-connector-java</artifactId>
