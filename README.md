@@ -23,12 +23,7 @@ Data for "train Order" See [data](https://github.com/xiaobin80/hlr_servlet/tree/
         
 
 Prepare:    
-    1. Environment
-    Set Maven(M2_home) in System variables.    
-    1) Create an M2_HOME System Variable.    
-    2) Add%M2_HOME%\bin; to your PATH variable.    
-    
-    2. Import Project    
+    1. Import Project    
     1) Open ME    
     2) Import->Maven->Existing Maven Projects    
 
