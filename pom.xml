@@ -2,15 +2,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.tdtc.carnumber</groupId>
   <artifactId>ssm</artifactId>
-  <version>0.4.2-SNAPSHOT</version>
+  <version>0.4.3-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>SpringMVC-Spring-Mybatis</name>
   <url>https://github.com/xiaobin80/</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<webVersion>3.1</webVersion>
-  	<spring.version>5.2.4.RELEASE</spring.version>
-  	<springsecurity.version>5.2.2.RELEASE</springsecurity.version>
+  	<spring.version>5.2.9.RELEASE</spring.version>
+  	<springsecurity.version>5.2.6.RELEASE</springsecurity.version>
   	<thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
   </properties>
   <dependencies>
@@ -23,14 +23,14 @@
 	<dependency>
 		<groupId>com.zaxxer</groupId>
 		<artifactId>HikariCP</artifactId>
-		<version>3.4.2</version>
+		<version>3.4.5</version>
 	</dependency>
 
 	
   	<dependency>
   		<groupId>mysql</groupId>
   		<artifactId>mysql-connector-java</artifactId>
-  		<version>5.1.48</version>
+  		<version>5.1.49</version>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework</groupId>
@@ -40,12 +40,12 @@
   	<dependency>
   		<groupId>org.aspectj</groupId>
   		<artifactId>aspectjweaver</artifactId>
-  		<version>1.9.5</version>
+  		<version>1.9.6</version>
   	</dependency>
   	<dependency>
   		<groupId>org.mybatis</groupId>
   		<artifactId>mybatis</artifactId>
-  		<version>3.4.6</version>
+  		<version>3.5.5</version>
   	</dependency>
 	<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
   	<dependency>
