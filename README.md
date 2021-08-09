@@ -26,6 +26,9 @@ Prepare:
     1. Import Project    
     1) Open ME    
     2) Import->Maven->Existing Maven Projects    
+    2. Pom
+    1) HikariCP v5.x    
+    Java 11+    
 
 Step 1: war       
     1) Export -> WAR file        
