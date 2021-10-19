@@ -1,5 +1,5 @@
 <%@ include file="IncludeTop.jsp" %>
-<form method=POST action="http://localhost:8080/SpringMVC-Spring-Mybatis/view/trainOrder.do">
+<form method=POST action="http://localhost:8080/carnumberJSP2/view/trainOrder.do">
 year:
   <select name="year" size="1">
           <c:forEach var="myYear" items="${myModel2.yearList}">

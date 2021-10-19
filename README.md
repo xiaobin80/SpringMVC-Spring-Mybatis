@@ -3,11 +3,6 @@ SpringMVC Spring Mybatis
 
 Data for "train Order" See [data](https://github.com/xiaobin80/hlr_servlet/tree/v1.3/data).    
     
-	/**
-	 * Built with MyEclipse 2017 Stable 2.0
-	 *
-	 */
-	 
 .        
 |____src        
 | |____main        
@@ -22,25 +17,15 @@ Data for "train Order" See [data](https://github.com/xiaobin80/hlr_servlet/tree/
 |____pom.xml        
         
 
-Prepare:    
-    1. Import Project    
-    1) Open ME    
-    2) Import->Maven->Existing Maven Projects    
-    2. Pom
-    1) HikariCP v5.x    
-    Java 11+    
-
-Step 1: war       
-    1) Export -> WAR file        
-    2) Browse - > Save    
-    3) Move war file to Tomcat webapps    
-    
+Step 1:    
+```bash
+mvn package -DskipTests
+```
 
 Step 2:       
-    http://localhost:8080/SpringMVC-Spring-Mybatis/view/trainOrder.do  
-    http://localhost:8080/SpringMVC-Spring-Mybatis/cust/list    
-    http://localhost:8080/SpringMVC-Spring-Mybatis/cust/insert   
-    http://localhost:8080/SpringMVC-Spring-Mybatis/cust/update/{id}    
-    http://localhost:8080/SpringMVC-Spring-Mybatis/cust/del/{id}  
-    http://localhost:8080/SpringMVC-Spring-Mybatis/login       
-     
+    http://localhost:8080/carnumberJSP2/view/trainOrder.do    
+    http://localhost:8080/carnumberJSP2/cust/list    
+    http://localhost:8080/carnumberJSP2/cust/insert   
+    http://localhost:8080/carnumberJSP2/cust/update/{id}    
+    http://localhost:8080/carnumberJSP2/cust/del/{id}    
+    http://localhost:8080/carnumberJSP2/login    

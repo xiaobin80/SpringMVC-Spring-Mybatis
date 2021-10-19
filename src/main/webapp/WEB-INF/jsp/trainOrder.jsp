@@ -1,7 +1,7 @@
 <%@ include file="IncludeTop.jsp" %>
 
 
-<form method=POST action="http://localhost:8080/SpringMVC-Spring-Mybatis/view/trainOrder.do">
+<form method=POST action="http://localhost:8080/carnumberJSP2/view/trainOrder.do">
 	<p>train_number:
 	  <select name="trainNumber" size=1>
 	     <c:forEach var="myTrainNumber" items="${myModel2.trainNumberList}">
