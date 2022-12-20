@@ -17,7 +17,7 @@
       <img src="../images/separator.gif" />
 
 <c:if test="${empty userSession.account}" >
-      <a href="<c:url value="/shop/signonForm.do"/>"><img id="img_signin" src="../images/sign-in.gif" /></a>
+      <a href="<c:url value="/login"/>"><img id="img_signin" src="../images/sign-in.gif" /></a>
 </c:if>
 
 <c:if test="${!empty userSession.account}" >
