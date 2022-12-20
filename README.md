@@ -57,3 +57,31 @@ mvn package -DskipTests
 |-|-|
 |11+|[HikariCP v5.0+](https://github.com/brettwooldridge/HikariCP/commit/1991355e6b20be04be2b2d9ff816c32c38937fd2)|
 |17+|[Spring Boot v3.0+](https://spring.io/blog/2021/09/02/a-java-17-and-jakarta-ee-9-baseline-for-spring-framework-6)|
+|17+|[Thymeleaf 3.1+](https://www.thymeleaf.org/doc/articles/thymeleaf31whatsnew.html)|
+
+### Thymeleaf
+Thymeleaf 3.1 adds support for the new ```jakarta.* ```class namespace in the Servlet API since version 5.0,    
+without removing support for the ```javax.*``` classes in previous versions.
+
+The [following versions(v5.0+)](https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api) are available in the Jakarta repo:
+- [v5.0](https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api/5.0.0)
+```xml
+<!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>5.0.0</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+- [v6.0](https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api/6.0.0)
+```xml
+<!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>6.0.0</version>
+    <scope>provided</scope>
+</dependency>
+```
