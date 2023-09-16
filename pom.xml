@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.tdtc.carnumber</groupId>
   <artifactId>ssm</artifactId>
-  <version>0.6.4-SNAPSHOT</version>
+  <version>1.0.0-alpha</version>
   <packaging>war</packaging>
   <name>SpringMVC-Spring-Mybatis</name>
   <url>https://github.com/xiaobin80/</url>
@@ -26,11 +26,11 @@
 		<artifactId>HikariCP</artifactId>
 		<version>4.0.3</version>
 	</dependency>
-  	<dependency>
-  		<groupId>mysql</groupId>
-  		<artifactId>mysql-connector-java</artifactId>
-  		<version>8.0.33</version>
-  	</dependency>
+	<dependency>
+		<groupId>com.mysql</groupId>
+		<artifactId>mysql-connector-j</artifactId>
+		<scope>8.0.33</scope>
+	</dependency>
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-webmvc</artifactId>
