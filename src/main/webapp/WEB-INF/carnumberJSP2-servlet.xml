@@ -25,6 +25,8 @@
 	<bean id="templateResolver"
 	      class="org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver">
 	    <property name="prefix" value="/WEB-INF/html/" />
+		<!-- https://www.thymeleaf.org/apidocs/thymeleaf/3.1.1.RELEASE/org/thymeleaf/templatemode/TemplateMode.html -->
+		<!-- https://www.thymeleaf.org/apidocs/thymeleaf/3.0.1.RELEASE/org/thymeleaf/templatemode/TemplateMode.html#HTML5 -->
 	    <property name="templateMode" value="HTML" />
 	</bean>
 	    
