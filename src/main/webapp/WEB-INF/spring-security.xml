@@ -13,6 +13,7 @@
 		<intercept-url pattern="/" access="permitAll" />
 		<intercept-url pattern="/man/admin**" access="hasRole('ADMIN')" />
 		<intercept-url pattern="/man/dba**" access="hasRole('ADMIN') and hasRole('DBA')" />
+		<intercept-url pattern="/login" access="hasRole('ROLE_ANONYMOUS')" />
 		<form-login login-page="/login" 
 					username-parameter="ssoId" 
 					password-parameter="password" />
