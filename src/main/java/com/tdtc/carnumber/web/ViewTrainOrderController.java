@@ -2,8 +2,8 @@ package com.tdtc.carnumber.web;
 
 import java.util.*;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 // slf4j
 import org.slf4j.Logger;
