@@ -18,6 +18,9 @@ Data for "train Order" See [data](https://github.com/xiaobin80/hlr_servlet/tree/
         
 
 # Deployment
+- JDK 17
+- Jakarta EE 10    
+Tomcat v10.1.x & Jetty v12.0.x
 
 ## Step 1: Gen War
 ```bash
