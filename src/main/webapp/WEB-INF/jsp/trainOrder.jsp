@@ -11,12 +11,12 @@
       </c:forEach>
       </select>
 
-	  <input name="submit" type=submit value="  search  " />	
+	  <input name="submit" type=submit value="  search  " />
   </p>
 </form>
 	<tr>
 	<tr>
-<div style="text-align:center;">	
+<div style="text-align:center;">
 	<table border="1" style="margin: auto;">
 		<tr>
 		<!-- 序号 -->
@@ -53,7 +53,7 @@
 			</td>
 			<td>
 				<c:out value="${myData.pastTime}" />
-			</td>												
+			</td>
 			</tr>
 		</c:forEach>
 	</table>
