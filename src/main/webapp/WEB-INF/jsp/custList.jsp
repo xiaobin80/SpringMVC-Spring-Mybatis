@@ -45,7 +45,7 @@
 			</td>
 			<td>
 				<c:out value="${myData.birthday}" />
-			</td>												
+			</td>
 			</tr>
 		</c:forEach>
 	</table>
