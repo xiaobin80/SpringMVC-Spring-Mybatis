@@ -16,6 +16,7 @@
 		<intercept-url pattern="/login" access="hasRole('ROLE_ANONYMOUS')" />
 		<intercept-url pattern="/view/**" access="permitAll" />
 		<intercept-url pattern="/images/**" access="permitAll" />
+		<intercept-url pattern="/cust/list" access="permitAll" />
 		<form-login login-page="/login" 
 					username-parameter="ssoId" 
 					password-parameter="password" />
