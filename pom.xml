@@ -9,7 +9,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<webVersion>6.0</webVersion>
-  	<spring.version>6.0.12</spring.version>
+  	<spring.version>6.0.14</spring.version>
   	<springsecurity.version>6.1.4</springsecurity.version>
   	<thymeleaf.version>3.1.2.RELEASE</thymeleaf.version>
 	<mybatis.directory>src/main/java/com/tdtc/carnumber/dao</mybatis.directory>
