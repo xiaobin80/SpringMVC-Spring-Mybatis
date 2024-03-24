@@ -19,10 +19,13 @@
 		<intercept-url pattern="/cust/list" access="permitAll" />
 		<form-login login-page="/login" 
 					username-parameter="ssoId" 
-					password-parameter="password" />
+					password-parameter="password" 
+					authentication-success-handler-ref="myAuthenticationSuccessHandler" />
 		<logout logout-success-url="/" />
 		<csrf disabled="true"/>
 	</http>
+	
+	<beans:bean id="myAuthenticationSuccessHandler" class="com.tdtc.carnumber.security.SimpleUrlAuthSuccess"/>
 	
 	<authentication-manager id="inMemoryAuthMgr">
 	  	<authentication-provider>
