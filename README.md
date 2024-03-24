@@ -28,7 +28,7 @@ mvn package -DskipTests
 ```
 
 ## Step 2: Run web site
-    http://localhost:8080/carnumberJSP2/view/trainOrder.do    
+http://localhost:8080/carnumberJSP2/view/trainOrder.do
 - [login](http://localhost:8080/carnumberJSP2/login)    
     http://localhost:8080/carnumberJSP2/cust/list
 - cust(CURD)    
