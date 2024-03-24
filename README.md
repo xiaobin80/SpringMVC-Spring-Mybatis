@@ -52,6 +52,9 @@ http://localhost:8080/carnumberJSP2/cust/del/{id}
 |55|11.0| :heavy_check_mark: |
 |61|17.0| :heavy_check_mark: |
 |62|18.0| :white_large_square: |
+|63|19.0| :white_large_square: |
+|64|20.0| :white_large_square: |
+|65|21.0| :heavy_check_mark: |
 
 
 ## Components
