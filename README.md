@@ -29,11 +29,11 @@ mvn package -DskipTests
 
 ## Step 2: Run web site
     http://localhost:8080/carnumberJSP2/view/trainOrder.do    
-    http://localhost:8080/carnumberJSP2/cust/list    
     http://localhost:8080/carnumberJSP2/cust/insert   
     http://localhost:8080/carnumberJSP2/cust/update/{id}    
     http://localhost:8080/carnumberJSP2/cust/del/{id}    
-    http://localhost:8080/carnumberJSP2/login    
+- [login](http://localhost:8080/carnumberJSP2/login)    
+    http://localhost:8080/carnumberJSP2/cust/list
 
 
 # JAVA non-8 Support
